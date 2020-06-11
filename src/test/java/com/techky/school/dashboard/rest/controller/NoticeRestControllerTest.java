@@ -38,7 +38,7 @@ public class NoticeRestControllerTest {
 	 * Test get notice list.
 	 */
 	@DisplayName("Test case to validate get all notice list from rest call.")
-	@Disabled("Disabled because of CircleCI")
+	@Disabled("Disabled because of CircleCI Integration.")
 	@Test
 	public void testGetNoticeList() {
 		final Map<?, ?> result = this.restTemplate
