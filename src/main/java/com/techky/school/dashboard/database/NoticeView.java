@@ -8,19 +8,20 @@ import java.sql.SQLException;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.ResultSetExtractor;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
-import org.springframework.transaction.annotation.Transactional;
 
 import com.techky.school.dashboard.database.dao.Notice;
+import com.techky.school.dashboard.database.dao.NoticeDetail;
 
 /**
  * Class used to fetch notice details from database.
  *
  * @author Bhushan Patil
  */
-@Transactional
 @Repository
 public class NoticeView {
 
@@ -36,9 +37,7 @@ public class NoticeView {
 	public List<Notice> getAllNotice() {
 		final String sqlQuery = "select uid, subject, date(meeting_date), contact_person, attendance_count, meeting_accepted_count, meeting_audience "
 				+ "from school_updates " + "order by meeting_date desc";
-		final List<Notice> result = jdbcTemplate.query(sqlQuery, new NoticeListRowMapper());
-		return result;
-
+		return jdbcTemplate.query(sqlQuery, new NoticeListRowMapper());
 	}
 
 	/**
@@ -47,24 +46,25 @@ public class NoticeView {
 	 * @param noticeId Integer instance
 	 * @return List instance.
 	 */
-	public List<Notice> getNoticeDetail(final String noticeId) {
-		final String sqlQuery = "select * from school_notice_detail where noticeId = " + noticeId + " order by uid asc";
-		final List<Notice> result = jdbcTemplate.query(sqlQuery, new NoticeDetailRowMapper());
-		return result;
+	public NoticeDetail getNoticeDetail(final String noticeId) {
+		final String sqlQuery = "select * from school_notice_detail where noticeId = ? order by uid asc";
+		final Object[] args = { noticeId };
+		return jdbcTemplate.query(sqlQuery, args, new NoticeDetailResultSetExtractor());
 	}
 
-	/*
-	 * public List<Notice> getNoticeDetail(final Integer noticeId) { final String
-	 * sqlQuery =
-	 * "select * from school_notice_detail where noticeId = ? order by uid asc";
-	 * List<Notice> result = jdbcTemplate.query(sqlQuery, new Object[] {noticeId},
-	 * new NoticeDetailRowMapper()); return result; }
-	 */
-
 	/**
-	 * NoticeListRowMapper class to mapped database row into object list
+	 * NoticeListRowMapper class to mapped database row into object list.
 	 */
 	private class NoticeListRowMapper implements RowMapper<Notice> {
+
+		/**
+		 * Map row.
+		 *
+		 * @param resultSet the result set
+		 * @param rowNumber the row number
+		 * @return the notice
+		 * @throws SQLException the SQL exception
+		 */
 		@Override
 		public Notice mapRow(final ResultSet resultSet, final int rowNumber) throws SQLException {
 			final Notice notice = new Notice();
@@ -81,14 +81,25 @@ public class NoticeView {
 	}
 
 	/**
-	 * NoticeDetailRowMapper class to mapped database row into object list
+	 * NoticeDetailRowMapper class to mapped database row into object list.
 	 */
-	private class NoticeDetailRowMapper implements RowMapper<Notice> {
-		@Override
-		public Notice mapRow(final ResultSet resultSet, final int rowNumber) throws SQLException {
-			final Notice notice = new Notice();
-			return notice;
-		}
+	private class NoticeDetailResultSetExtractor implements ResultSetExtractor<NoticeDetail> {
 
+		/**
+		 * Extract data.
+		 *
+		 * @param resultSet the result set
+		 * @return the notice detail
+		 * @throws SQLException        the SQL exception
+		 * @throws DataAccessException the data access exception
+		 */
+		@Override
+		public NoticeDetail extractData(final ResultSet resultSet) throws SQLException, DataAccessException {
+			NoticeDetail noticeDetail = null;
+			if (resultSet.next()) {
+				noticeDetail = new NoticeDetail();
+			}
+			return noticeDetail;
+		}
 	}
 }

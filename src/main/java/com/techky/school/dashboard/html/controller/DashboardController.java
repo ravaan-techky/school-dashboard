@@ -6,7 +6,7 @@ package com.techky.school.dashboard.html.controller;
 import java.util.Map;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 
 /**
  * Class used for dashboard operation.
@@ -22,7 +22,7 @@ public class DashboardController {
 	 * @param model Map instance.
 	 * @return String instance.
 	 */
-	@RequestMapping(path = { "/", "/home" })
+	@GetMapping(path = { "/" })
 	public String showDashboard(final Map<String, Object> model) {
 		return "dashboard/dashboard";
 	}

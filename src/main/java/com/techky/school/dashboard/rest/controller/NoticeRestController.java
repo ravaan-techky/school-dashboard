@@ -8,12 +8,13 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.techky.school.dashboard.database.NoticeView;
 import com.techky.school.dashboard.database.dao.Notice;
+import com.techky.school.dashboard.database.dao.NoticeDetail;
+import com.techky.school.dashboard.service.NoticeService;
 
 /**
  * Class used to fetch notice details.
@@ -23,19 +24,19 @@ import com.techky.school.dashboard.database.dao.Notice;
 @RestController
 public class NoticeRestController {
 
-	/** noticeView NoticeView instance */
+	/** noticeService NoticeService instance */
 	@Autowired
-	private NoticeView noticeView;
+	private NoticeService noticeService;
 
 	/**
 	 * Method to fetch Notice List.
 	 *
 	 * @return Map instance
 	 */
-	@RequestMapping("/getNoticeList")
+	@GetMapping("/getNoticeList")
 	public Map<String, List<Notice>> getNoticeList() {
-		final Map<String, List<Notice>> dataResult = new ConcurrentHashMap<String, List<Notice>>();
-		dataResult.put("data", noticeView.getAllNotice());
+		final Map<String, List<Notice>> dataResult = new ConcurrentHashMap<>();
+		dataResult.put("data", noticeService.getAllNotice());
 		return dataResult;
 	}
 
@@ -45,9 +46,9 @@ public class NoticeRestController {
 	 * @param noticeId String instance.
 	 * @return List instance.
 	 */
-	@RequestMapping("/getNotice")
-	public List<Notice> getNotice(@RequestParam(value = "noticeId", defaultValue = "-1") final String noticeId) {
-		return noticeView.getNoticeDetail(noticeId);
+	@GetMapping("/getNotice")
+	public NoticeDetail getNotice(@RequestParam(value = "noticeId", defaultValue = "-1") final String noticeId) {
+		return noticeService.getNoticeDetail(noticeId);
 	}
 
 }
