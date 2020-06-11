@@ -37,7 +37,8 @@ public class NoticeRestControllerTest {
 	 * Test get notice list.
 	 */
 	@DisplayName("Test case to validate get all notice list from rest call.")
-	@Test(enabled = false)
+	@Disabled("Disabled because of CircleCI")
+	@Test
 	public void testGetNoticeList() {
 		final Map<?, ?> result = this.restTemplate
 				.getForObject("http://localhost:" + port + "/school-dashboard/getNoticeList", Map.class);
@@ -50,7 +51,8 @@ public class NoticeRestControllerTest {
 	 * Test get notice.
 	 */
 	@DisplayName("Test case to validate get notice detail from rest call.")
-	@Test(enabled = false)
+	@Disabled("Disabled because of CircleCI")
+	@Test
 	public void testGetNotice() {
 		final Map<?, ?> result = this.restTemplate
 				.getForObject("http://localhost:" + port + "/school-dashboard/getNoticeList", Map.class);
