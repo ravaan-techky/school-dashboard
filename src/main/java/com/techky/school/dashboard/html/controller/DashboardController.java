@@ -22,7 +22,7 @@ public class DashboardController {
 	 * @param model Map instance.
 	 * @return String instance.
 	 */
-	@GetMapping(path = { "/" })
+	@GetMapping(path = { "/", "/home" })
 	public String showDashboard(final Map<String, Object> model) {
 		return "dashboard/dashboard";
 	}

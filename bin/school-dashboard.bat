@@ -1,16 +1,3 @@
-title "Sonar Report Plugin"
+title School Dashboard Application
 
-@echo off
-setLocal EnableDelayedExpansion
-
-set CLASSPATH="
-
-for /R ../lib %%a in (*.jar) do (
-	set CLASSPATH=!CLASSPATH!;%%a
-)
- 
-set CLASSPATH=!CLASSPATH!"
- 
-echo !CLASSPATH!
- 
-java -DPLUGIN_CONF_DIRECTORY=../conf com.techky.sonar.report.ReportGenerator
+java -Dspring.config.name=application,school-dashboard -Dspring.config.location=../conf/ -jar ..\target\school-dashboard-1.0.war
