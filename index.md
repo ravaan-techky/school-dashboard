@@ -95,14 +95,11 @@ spring.application.name=school-dashboard
   
 ### Application Gallery:
 
-| Page | Link |
-| -------- | -------- |
-| School Dashboard Page | <span style="color: green;font-weight: bold;"><a href="images/dashboard.jpg"><i class="fa fa-picture-o"></i></a></span> |
-| Notice List Page | <span style="color: green;font-weight: bold;"><a href="images/dashboard.jpg"><i class="fa fa-picture-o"></i></a></span> |
-| Notice Details Page | <span style="color: green;font-weight: bold;"><a href="images/dashboard.jpg"><i class="fa fa-picture-o"></i></a></span> |
-| School Gallery Page | <span style="color: green;font-weight: bold;"><a href="images/dashboard.jpg"><i class="fa fa-picture-o"></i></a></span> |
-| About Us | <span style="color: green;font-weight: bold;"><a href="images/dashboard.jpg"><i class="fa fa-picture-o"></i></a></span> |
-| Feedback Page | <span style="color: green;font-weight: bold;"><a href="images/dashboard.jpg"><i class="fa fa-picture-o"></i></a></span> |
+  | <i class="fa fa-picture-o"></i> | <i class="fa fa-picture-o"></i> | <i class="fa fa-picture-o"></i> |
+  | -------- | -------- | -------- |
+  | <a href="images/dashboard.jpg">![Overview](images/dashboard_s.jpg)<a/> |  <a href="images/dashboard.jpg">![Overview](images/notice_list_s.jpg)<a/> | <a href="images/dashboard.jpg">![Overview](images/notice_details_s.jpg)</a> |
+  | ![Overview](images/dashboard_s.jpg) |  ![Overview](images/notice_list_s.jpg) | ![Overview](images/notice_details_s.jpg) |
+  | ![Overview](images/dashboard_s.jpg) |  ![Overview](images/notice_list_s.jpg) | ![Overview](images/notice_details_s.jpg) |
 
 ### Developer Information:
 
