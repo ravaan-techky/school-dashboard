@@ -127,6 +127,18 @@ above mention URL then it will paste automatically.
 
 ### Configuring Project into Circle CI:
 
+- Login to [Circle CI](https://app.circleci.com/). **Note:** If you dont have login, please create it with your GitHub account
+
+- Set up school-dashboard project for pipeline
+![Circle_CI_Project_Setup](images/circle_ci_project_setup.jpg)
+
+- Select project type as maven
+![Circle_CI_Maven_Type_Project](images/circle_ci_maven_type_project.jpg)
+
+- We have 2 Options to configure Circle CI
+ - Option 1: Download Circle CI configuration **config.yml** file and commit it into **${project_directory}/.circleci/**. After committing this file, Circle CI environment is ready to use.
+ - Option 2: Click on **Start Build** button, which create Pull Request for given project. Once we merged that pull request into branch Circle CI environment is ready to use.
+![Circle_CI_Project_Configuration](images/circle_ci_project_configuration.jpg)
 
 ### Important Links:
 
