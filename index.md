@@ -87,17 +87,20 @@ spring.application.name=school-dashboard
 
 | Description | Link |
 | -------- | -------- |
-| Source Code | <span style="color: green;font-weight: bold;"><a href="https://github.com/ravaan-techky/sonar-plugins/archive/master.zip"><i class="fa fa-download"></i></a></span> |
+| Source Code | <span style="color: green;font-weight: bold;"><a href="https://github.com/ravaan-techky/school-dashboard/archive/master.zip"><i class="fa fa-download"></i></a></span> |
 | Circle CI <If Available> | Not Available |
-| Documentation | <span style="color: green;font-weight: bold;"><a href="https://ravaan-techky.github.io/sonar-plugins/index"><i class="fa fa-folder-open"></i></a></span> |
+| Documentation | <span style="color: green;font-weight: bold;"><a href="https://ravaan-techky.github.io/school-dashboard/"><i class="fa fa-folder-open"></i></a></span> |
   
-### Sample Reports:
+### Application Gallery:
 
-| Report Type | Link |
+| Page | Link |
 | -------- | -------- |
-| HTML | <span style="color: green;font-weight: bold;"><a href="https://ravaan-techky.github.io/sonar-plugins/report_sample/html_report.html"><i class="fa fa-info"></i></a></span> |
-| PDF | <span style="color: green;font-weight: bold;"><a href="https://ravaan-techky.github.io/sonar-plugins/report_sample/pdf_report.pdf"><i class="fa fa-info"></i></a></span> |
-| XML | <span style="color: green;font-weight: bold;"><a href="https://ravaan-techky.github.io/sonar-plugins/report_sample/xml_report.xml"><i class="fa fa-info"></i></a></span> |
+| School Dashboard Page | <span style="color: green;font-weight: bold;"><a href="images/dashboard.jpg"><i class="fa fa-picture-o"></i></a></span> |
+| Notice List Page | <span style="color: green;font-weight: bold;"><a href="images/dashboard.jpg"><i class="fa fa-picture-o"></i></a></span> |
+| Notice Details Page | <span style="color: green;font-weight: bold;"><a href="images/dashboard.jpg"><i class="fa fa-picture-o"></i></a></span> |
+| School Gallery Page | <span style="color: green;font-weight: bold;"><a href="images/dashboard.jpg"><i class="fa fa-picture-o"></i></a></span> |
+| About Us | <span style="color: green;font-weight: bold;"><a href="images/dashboard.jpg"><i class="fa fa-picture-o"></i></a></span> |
+| Feedback Page | <span style="color: green;font-weight: bold;"><a href="images/dashboard.jpg"><i class="fa fa-picture-o"></i></a></span> |
 
 ### Developer Information:
 
