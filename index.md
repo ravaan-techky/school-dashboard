@@ -55,7 +55,8 @@ and Circle CI integratopm where we can execute Junit test cases to verify build 
 
 ### Tool configuration:
  - Edit **_application.properties**_ file
-```markdown
+
+ ```markdown
 #spring mvc configutation
 spring.mvc.view.prefix: /WEB-INF/jsp/
 spring.mvc.view.suffix: .jsp
@@ -77,7 +78,8 @@ server.servlet.context-path=/school-dashboard
 
 #spring related configuration
 spring.application.name=school-dashboard
-```
+ ```
+
  - Database table creation script - ${project.home}\src\main\resources\create-table.sql
  
  - Sample data population script - ${project.home}\src\main\resources\populate-sample-data
