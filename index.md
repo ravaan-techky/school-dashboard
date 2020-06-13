@@ -97,9 +97,8 @@ spring.application.name=school-dashboard
 
   | <i class="fa fa-picture-o"></i> | <i class="fa fa-picture-o"></i> | <i class="fa fa-picture-o"></i> |
   | -------- | -------- | -------- |
-  | <a href="images/dashboard.jpg">![Overview](images/dashboard_s.jpg)<a/> |  <a href="images/dashboard.jpg">![Overview](images/notice_list_s.jpg)<a/> | <a href="images/dashboard.jpg">![Overview](images/notice_details_s.jpg)</a> |
-  | ![Overview](images/dashboard_s.jpg) |  ![Overview](images/notice_list_s.jpg) | ![Overview](images/notice_details_s.jpg) |
-  | ![Overview](images/dashboard_s.jpg) |  ![Overview](images/notice_list_s.jpg) | ![Overview](images/notice_details_s.jpg) |
+  | School Dashboard<br/><br/><a href="images/dashboard.jpg">![Overview](images/dashboard_s.jpg)<a/> |  Notice List<br/><br/><a href="images/notice_list.jpg">![Overview](images/notice_list_s.jpg)<a/> | Notice Detail<br/><br/><a href="images/notice_details.jpg">![Overview](images/notice_details_s.jpg)</a> |
+  | School Gallery<br/><br/><a href="images/school_gallery.jpg">![Overview](images/school_gallery_s.jpg)<a/> |  Achievements<br/><br/><a href="images/achievements.jpg">![Overview](images/achievements_s.jpg)<a/> | About Us<br/><br/><a href="images/about.jpg">![Overview](images/about_s.jpg)</a> |
 
 ### Developer Information:
 
