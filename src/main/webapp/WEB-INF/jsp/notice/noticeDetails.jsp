@@ -10,12 +10,11 @@
 							</div>
 							<div class="vertical-timeline-content">
 								<h2>Meeting</h2>
-								<p>Conference on the sales results for the previous year. Monica please examine sales trends in marketing and products. Below please find the current status of the sale.
-								</p>
+								<p>There was a discussion between the parents and the Principal for reduction in the proposed 14.68% fee hike. Parents informed that last year approx. 10% hike was already there as books were excluded from last year fees and demanded the justification for such fee hike again and were not convinced with 14.68 % and at last parents requested the fee hike to be brought down to 10% for classes 1 to 10 with all facility same and inclusion of notebooks in this revised fee of 10%</p>
 								<a href="#" class="btn btn-sm btn-primary"> More info</a>
 								<span class="vertical-date">
 									Today <br>
-									<small>Dec 24</small>
+									<small>13th June, 2020</small>
 								</span>
 							</div>
 						</div>
@@ -24,12 +23,12 @@
 								<i class="fa fa-file-text"></i>
 							</div>
 							<div class="vertical-timeline-content">
-								<h2>Send documents to Mike</h2>
-								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.</p>
+								<h2>Send documents to Parents</h2>
+								<p>On the same, school share first draft of mail to Parents. Please check attached documents</p>
 								<a href="#" class="btn btn-sm btn-success"> Download document </a>
 								<span class="vertical-date">
 									Today <br>
-									<small>Dec 24</small>
+									<small>13th June, 2020</small>
 								</span>
 							</div>
 						</div>
@@ -38,10 +37,13 @@
 								<i class="fa fa-coffee"></i>
 							</div>
 							<div class="vertical-timeline-content">
-								<h2>Coffee Break</h2>
-								<p>Go to shop and find some products. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's. </p>
-								<a href="#" class="btn btn-sm btn-info">Read more</a>
-								<span class="vertical-date"> Yesterday <br><small>Dec 23</small></span>
+								<h2>Break</h2>
+								<p>Coffee Break</p>
+								<p>Snack Break</p>
+								<span class="vertical-date">
+									Today <br>
+									<small>13th June, 2020</small>
+								</span>
 							</div>
 						</div>
 						<div class="vertical-timeline-block">
@@ -49,19 +51,12 @@
 								<i class="fa fa-phone"></i>
 							</div>
 							<div class="vertical-timeline-content">
-								<h2>Phone with Jeronimo</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
-								<span class="vertical-date">Yesterday <br><small>Dec 23</small></span>
-							</div>
-						</div>
-						<div class="vertical-timeline-block">
-							<div class="vertical-timeline-icon lazur-bg">
-								<i class="fa fa-user-md"></i>
-							</div>
-							<div class="vertical-timeline-content">
-								<h2>Go to the doctor dr Smith</h2>
-								<p>Find some issue and go to doctor. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </p>
-								<span class="vertical-date">Yesterday <br><small>Dec 23</small></span>
+								<h2>Website update</h2>
+								<p>Website needs to be updated time to time and at present we can add the details of the staff members and an option of Career with job profile so that interested candidates can apply for it.</p>
+								<span class="vertical-date">
+									Today <br>
+									<small>13th June, 2020</small>
+								</span>
 							</div>
 						</div>
 						<div class="vertical-timeline-block">
@@ -69,9 +64,12 @@
 								<i class="fa fa-comments"></i>
 							</div>
 							<div class="vertical-timeline-content">
-								<h2>Chat with Monica and Sandra</h2>
-								<p>Web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). </p>
-								<span class="vertical-date">Yesterday <br><small>Dec 23</small></span>
+								<h2>Kids Application Update</h2>
+								<p>Kids APP is yet not fully functional. It needs to be functional by a given deadline. Mr. Pranay is the school point of contact for Kids App. Worksheets, school programs can be uploaded and all other features can be made functional</p>
+								<span class="vertical-date">
+									Today <br>
+									<small>13th June, 2020</small>
+								</span>
 							</div>
 						</div>
 					</div>
@@ -79,4 +77,8 @@
 				</div>
 			</div>				
 		</div>
+		<jsp:include page="../include_js/include_js.jsp" />
+		<script type="text/javascript">
+			setActiveLink('noticeBoard');
+		</script>
 <jsp:include page="../footer/footer.jsp" />
