@@ -112,6 +112,19 @@ above mention URL then it will paste automatically.
 ![Eclipse_Select_Git_Project_Wizards](images/eclipse_select_git_project_wizards.jpg)
 
 - Now we need to give the project a name. Eclipse chooses the git name and that is usually sufficient. Click on Finish and you should see your project in Eclipse.
+![Eclipse_Project_Open_Window](images/eclipse_project_open_window.jpg)
+
+- This project must need to convert from a General to a Maven project. Right mouse click on the project and select Configure -> Convert to Maven project.
+
+- Update maven project. Right mouse click on the project and select Maven -> Update Maven Project.
+![Eclipse_Project_Maven_Update](images/eclipse_project_maven_update.jpg)
+
+- As a final step, you should build your project. In Eclipse you build a Maven project by right-mouse clicking on the project and selecting Run As -> 4 Maven Build.
+![Eclipse_Project_Maven_Build](images/eclipse_project_maven_build.jpg)
+
+- Open 'DashboardApplication' with 'CTRL + SHFIT + T' and run application as 'Spring Boot Application'
+![Eclipse_Project_Maven_Run](images/eclipse_project_maven_run.jpg)
+
 
 ### Important Links:
 
