@@ -100,9 +100,10 @@ spring.application.name=school-dashboard
  ```markdown
 All you need to enter on this form is the https address, -
 https://github.com/ravaan-techky/school-dashboard.git 
-Once you do, most of the remaining fields are filled in. You only need a user name and password.
-If you plan to commit back to the repository, assuming you have the necessary privileges. 
-Note: If you already copy above mention URL then it will paste automatically.
+Once you do, most of the remaining fields are filled in. You only need a 
+user name and password. If you plan to commit back to the repository, 
+assuming you have the necessary privileges. **Note:** If you already copy 
+above mention URL then it will paste automatically.
  ```
 
 ### Important Links:
