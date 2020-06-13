@@ -10,7 +10,7 @@ and Circle CI integratopm where we can execute Junit test cases to verify build 
 
 | Layers | Available | Technology |
 | ------ | ------ | ------ |
-| Client side layer | Yes | Javascript & Bootstrap |
+| Client side layer | Yes | JQuery & Bootstrap |
 | Server Web layer | Yes | Spring Boot |
 | Service layer | Yes | Core Java & Spring |
 | Database layer | Yes | MySQL |
@@ -53,7 +53,7 @@ and Circle CI integratopm where we can execute Junit test cases to verify build 
 
   ![Overview](images/school-dashboard-blockdiagram.png)
 
-### Tool configuration:
+### Application configuration:
  - Edit **_application.properties**_ file
 
  ```markdown
@@ -84,6 +84,26 @@ spring.application.name=school-dashboard
  
  - Sample data population script - ${project.home}\src\main\resources\populate-sample-data
  
+### Configuring Project into Eclipse STS:
+ - In Eclipse STS, select the File menu and then select Import… You will see:
+ 
+ ![Eclipse Import](images/eclipse_import.jpg)
+ 
+ - Select Projects from Git, click on Next, and you will now see:
+ 
+ ![Eclipse Project_From_Git](images/eclipse_select_repo.jpg)
+ 
+ - Select Clone URI and you will see:
+ 
+ ![Eclipse Project_From_Git](images/eclipse_select_git_project.jpg)
+
+ ```markdown
+All you need to enter on this form is the https address, -
+https://github.com/ravaan-techky/school-dashboard.git 
+Once you do, most of the remaining fields are filled in. You only need a user name and password.
+If you plan to commit back to the repository, assuming you have the necessary privileges. 
+Note: If you already copy above mention URL then it will paste automatically.
+ ```
 
 ### Important Links:
 
