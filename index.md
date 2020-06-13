@@ -125,6 +125,8 @@ above mention URL then it will paste automatically.
 - Open 'DashboardApplication' with 'CTRL + SHFIT + T' and run application as 'Spring Boot Application'
 ![Eclipse_Project_Maven_Run](images/eclipse_project_maven_run.jpg)
 
+### Configuring Project into Circle CI:
+
 
 ### Important Links:
 
