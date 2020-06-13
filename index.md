@@ -33,7 +33,7 @@ and Circle CI integratopm where we can execute Junit test cases to verify build 
 | Editor  | Spring Tool Suite 4 |
 | CI Env | Circle CI |
 
-### Benifits:
+### Project Description:
 
 - Dashboard
   - Showing school location
@@ -49,78 +49,39 @@ and Circle CI integratopm where we can execute Junit test cases to verify build 
   - Festival gallery
 - New Notice high-ligher
 
-  
-
 ### Architecture Overview:
 
   ![Overview](images/school-dashboard-blockdiagram.png)
 
 ### Tool configuration:
- - Edit **_report-plugin.properties**_ file
+ - Edit **_application.properties**_ file
   ```markdown
-#sonar qube server URL.
-sonar.qube.server.url=http://SONAR_QUBE_SERVER_HOSTNAME:PORT/
-#report xml stylesheet template.
-report.xslt.template=../conf/Report.xsl
-#report output file name.
-report.output.file=../conf/OutputXMLReport.html
-#supported formats - html, xml, pdf
-report.output.format=html
+#spring mvc configutation
+spring.mvc.view.prefix: /WEB-INF/jsp/
+spring.mvc.view.suffix: .jsp
+
+#spring database configuration
+spring.datasource.url=jdbc:mysql://localhost:3306/school-dashboard
+spring.datasource.username=school-dashboard
+spring.datasource.password=school-dashboard
+spring.datasource.tomcat.max-wait=20000
+spring.datasource.tomcat.max-active=50
+spring.datasource.tomcat.max-idle=20
+spring.datasource.tomcat.min-idle=15 
+
+#server port
+server.port=8080
+
+#application context path
+server.servlet.context-path=/school-dashboard
+
+#spring related configuration
+spring.application.name=school-dashboard
  ```
- - Edit **_FilterMapper.xml**_ file
- <pre><code>
-&lt;!-- This Filter used to fetch requirement specific data from SonarQube server. --&gt;
-&lt;Filter&gt;
-  &lt;!-- Types node value contains comma separated issue type. 
-       BUG indicate sonar reported bug. 
-       VULNERABILITY indicate sonar reported vulnerabilities. 
-       If we keep Types node value is blank then it will show all types of sonar reported issue.
-  --&gt;
-	&lt;Types&gt;BUG,VULNERABILITY&lt;/Types&gt;
-
-  &lt;!-- Resolutions node value contains comma separated resolutions of sonar reported issue. 
-       OPEN indicates sonar reported issue whose implementation status is currently Open. 
-       FALSE-POSITIVE indicates sonar reported issue's implementation status is currently marked as false positive by developer. 
-       WONTFIX indicates sonar reported issue is as per designed and we can't able to fix this.
-       FIXED indicates sonar reported issue is Fixed.
-       CLOSED indicates sonar reported issue is Fixed and after sonar scann it gets validated and marked as Closed. 
-       If we keep Resolutions node value is blank then it will show all resolutions sonar reported issue.
-  --&gt;
-	&lt;Resolutions&gt;FALSE-POSITIVE,WONTFIX,FIXED,REMOVED&lt;/Resolutions&gt;
-
-  &lt;!-- 
-  	Severities node value contains comma separated severity.
-	BLOCKER indicates critical and blocker sonar reported issue.
-	MAJOR indicates high level sonar reported issue.
-	MINOR indicates low level sonar reported issue.
-  --&gt;
-	&lt;Severities&gt;BLOCKER&lt;/Severities&gt;
-
-  &lt;!-- 
-  	Projects node value contains project name mentioned in sonarqube. This value is dervied from maven project group and artifact id.
-  --&gt;
-	&lt;Projects&gt;&lt;/Projects&gt;
-
-  &lt;!-- 
-  	DateRange node value contains start date and end date to find out sonar reported issue with this range.
-	CreatedAfter format is YYYY-mm-dd example, - 2019-01-15
-	CreatedBefore format is YYYY-mm-dd example, - 2019-02-15
-	CreatedAfter date should be older than CreatedBefore
-  --&gt;
-	&lt;DateRange&gt;
-		&lt;CreatedAfter&gt;2019-02-03&lt;/CreatedAfter&gt;
-		&lt;CreatedBefore&gt;2019-02-15&lt;/CreatedBefore&gt;
-	&lt;/DateRange&gt;
-&lt;/Filter&gt;
-</code></pre>
-
-- Edit **_Report.xsl**_ file
- ```markdown
-This is XSLT file which use to generate HTML report. Same HTML format is used in PDF file.
-
-Sample XSLT template is available in ${project.directory}/conf/Report.xsl
-
-```
+ - Database table creation script - ${project.home}\src\main\resources\create-table.sql
+ 
+ - Sample data population script - ${project.home}\src\main\resources\populate-sample-data
+ 
 
 ### Important Links:
 
