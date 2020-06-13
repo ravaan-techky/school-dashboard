@@ -105,6 +105,13 @@ user name and password. If you plan to commit back to the repository,
 assuming you have the necessary privileges. **Note:** If you already copy 
 above mention URL then it will paste automatically.
  ```
+- The next dialog allows you to select either the master or a branch of the project.
+ ![Eclipse_select_Git_Project_Branch_Selection](images/eclipse_select_git_project_branch_selection.jpg)
+
+- The next action is to choose a wizard for importing the repository.
+![Eclipse_Select_Git_Project_Wizards](images/eclipse_select_git_project_wizards.jpg)
+
+- Now we need to give the project a name. Eclipse chooses the git name and that is usually sufficient. Click on Finish and you should see your project in Eclipse.
 
 ### Important Links:
 
