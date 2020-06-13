@@ -20,10 +20,17 @@ and Circle CI integratopm where we can execute Junit test cases to verify build 
 | Technology | Version |
 | ------- | ------- |
 | Core Java | Adopt Open JDK 8 |
+| Bootstrap | 3.0 |
 | Spring Boot | 2.3.0.RELEASE|
 | JUnit | 5.0 |
 | MySQL | 5.7.30 |
+
+### Tools :
+
+| Tool | Version |
+| ------- | ------- |
 | Maven | Apache Maven 3.5.0 |
+| Editor  | Spring Tool Suite 4 |
 | CI Env | Circle CI |
 
 ### Benifits:
