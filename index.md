@@ -157,7 +157,7 @@ above mention URL then it will paste automatically.
 | Description | Link |
 | -------- | -------- |
 | Source Code | <span style="color: green;font-weight: bold;"><a href="https://github.com/ravaan-techky/school-dashboard/archive/master.zip"><i class="fa fa-download"></i></a></span> |
-| Circle CI <If Available> | Not Available |
+| Circle CI <If Available> | [<i class="fa fa-external-link"></i>](#)  |
 | Documentation | <span style="color: green;font-weight: bold;"><a href="https://ravaan-techky.github.io/school-dashboard/"><i class="fa fa-folder-open"></i></a></span> |
   
 ### Application Gallery:
