@@ -11,7 +11,6 @@ and Circle CI integratopm where we can execute Junit test cases to verify build 
 | Layers | Available | Technology |
 | ------ | ------ | ------ |
 | Client side layer | Yes | Javascript & Bootstrap |
-| Cascade style layer | Yes | XSLT |
 | Server Web layer | Yes | Spring Boot 2.3.0 |
 | Service layer | Yes | Core Java & Spring |
 | Database layer | Yes | MySQL |
@@ -20,16 +19,20 @@ and Circle CI integratopm where we can execute Junit test cases to verify build 
 
 | Technology | Version |
 | ------- | ------- |
-| Core Java | Adopt Open JDK (11.0.7) |
+| Core Java | Adopt Open JDK 8 |
+| Spring Boot | 2.3.0.RELEASE|
+| JUnit | 5.0 |
+| MySQL | 5.7.30 |
 | Maven | Apache Maven 3.5.0 |
-| XSLT | 2.0 |
-| SonarQube Server | 7.7 Community Edition |
+| CI Env | Circle CI |
 
 ### Benifits:
 
-- Reporting
-  - Download sonar scanning reports in the form of HTML / PDF which we can share with audience
-  - Keep track of sonar scanning issue as we have list of all open / resolved / closed issue.
+- Dashboard
+  - Showing school location
+  - Latest news of current academic year
+  - Current academic year statistics for students staffs etcs
+  - Todays administrative schedule with timeline.
 
 ### Architecture Overview:
 
