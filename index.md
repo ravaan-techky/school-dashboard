@@ -11,7 +11,7 @@ and Circle CI integratopm where we can execute Junit test cases to verify build 
 | Layers | Available | Technology |
 | ------ | ------ | ------ |
 | Client side layer | Yes | Javascript & Bootstrap |
-| Server Web layer | Yes | Spring Boot 2.3.0 |
+| Server Web layer | Yes | Spring Boot |
 | Service layer | Yes | Core Java & Spring |
 | Database layer | Yes | MySQL |
 
@@ -40,10 +40,20 @@ and Circle CI integratopm where we can execute Junit test cases to verify build 
   - Latest news of current academic year
   - Current academic year statistics for students staffs etcs
   - Todays administrative schedule with timeline.
+- Notice List
+  - Display all notices
+  - Drill-down functionality from notice list to check notice details
+- Gallery
+  - School function gallery
+  - Anual function gallery
+  - Festival gallery
+- New Notice high-ligher
+
+  
 
 ### Architecture Overview:
 
-  ![Overview](images/sonar-report-blockdiagram.png)
+  ![Overview](images/school-dashboard-blockdiagram.png)
 
 ### Tool configuration:
  - Edit **_report-plugin.properties**_ file
