@@ -140,6 +140,18 @@ above mention URL then it will paste automatically.
  - Option 2: Click on **Start Build** button, which create Pull Request for given project. Once we merged that pull request into branch Circle CI environment is ready to use.
 ![Circle_CI_Project_Configuration](images/circle_ci_project_configuration.jpg)
 
+- Once above configuration successful complete, we can able to see Circle CI pipeline dashboard.
+![Circle_CI_Pipeline_Project](images/circle_ci_pipelline_project.jpg)
+
+- In case of build failure, we can get complete execution result step by step. 
+  - Step level build failure
+    ![Circle_CI_Step_Failure_Project](images/circle_ci_step_failure.jpg)
+
+  - Test case build failure
+    ![Circle_CI_Testcase_Failure_Project](images/circle_ci_testcase_failure.jpg)
+
+- **Note: Circle CI is not free. You can check more details on [Plan & Usage page](https://app.circleci.com/settings/plan/github/ravaan-techky/usage)**
+
 ### Important Links:
 
 | Description | Link |
